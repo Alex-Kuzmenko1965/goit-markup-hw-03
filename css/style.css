@@ -6,10 +6,23 @@
   --light-color: #FFF;
   --background-dark-color: #2F303A;
 }
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5;  
+  background-color: #f5f5f5;
+  margin: 0; 
 }
 
 .link {
@@ -20,6 +33,11 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 /*---HEADER---*/
 .header {
   background-color: var(--light-color);
@@ -84,21 +102,40 @@ body {
 }
 
 /*---MAIN---*/
-.hero {
+.hero {  
   background-color: var(--background-dark-color);
+  margin: 94px;
 }
 
+.container-hero {
+  display: block;
+  max-width: 1200px;
+  height: 600px;
+  padding-top: 200px;    
+  margin: 0 auto;    
+}
 .hero-title {
+  display: block;
+  width: 696px;
+  margin: 0 auto 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;  
-  color: var(--light-color);
+  color: var(--light-color);  
 }
 
 .hero-btn {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: var(--accent-color);
+  margin: 0 auto;
+
   font-family: inherit;
   font-size: 16px;
   line-height: 1.87;
@@ -113,7 +150,15 @@ body {
   color: var(--title-text-color);
 }
 
+.feature,
+.direct {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+
 .feature-title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -126,8 +171,14 @@ body {
   letter-spacing: 0.03em;  
   color: var(--secandary-text-color);
 }
+.comand,
+.portfolio {
+  padding: 94px 15px;
+}
 
 .title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -136,6 +187,8 @@ body {
 }
 
 .subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -152,6 +205,13 @@ body {
 }
 /*---PORTFOLIO---*/
 .portfolio-btn {
+  display: inline-block;
+  padding: 6px 25px;
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: transparent;
+  margin: 0 auto;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -164,9 +224,13 @@ body {
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--light-color);
+  background-color: var(--accent-color) ;
 }
 
 .portfolio-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;  
@@ -181,6 +245,7 @@ body {
 }
 /*---FOOtER---*/
 .footer {
+  padding: 60px 15px;  
   background-color: var(--background-dark-color);
 }
 
@@ -195,6 +260,8 @@ body {
 }
 
 .footer-address-text {
+  margin-top: 20px;
+  margin-bottom: 9px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;

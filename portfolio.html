@@ -9,13 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <!-- Шапка сторінки -->
     <header class="header">
       <!-- Навігація на інші сторінки -->
-      <nav class="header-nav">
+      <nav class="container header-nav">
         <a class="header-logo link" href="./">
           <span class="logo-cyan">Web</span>Studio
         </a>
@@ -25,74 +28,74 @@
           <li><a href="" class="header-link link">Контакти</a></li>
         </ul>
       </nav>
-      <div>
-        <!-- Посилання на e-mail та телефон-->
+      <!-- Посилання на e-mail та телефон-->
+      <div class="container">
         <ul class="auth-mail list">
           <li><a class="auth-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="auth-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </ul>        
       </div>
     </header>  
     <!-- Сторінка сайту Портфоліо-->
     <main>
-      <section>
-        <ul class="button-list list">    
-          <li><button type="button" class="portfolio-btn">Усі</button></li>
-          <li><button type="button" class="portfolio-btn">Веб-сайти</button></li>
-          <li><button type="button" class="portfolio-btn">Додатки</button></li>
-          <li><button type="button" class="portfolio-btn">Дизайн</button></li>
-          <li><button type="button" class="portfolio-btn">Маркетинг</button></li>
-        </ul>      
-        <ul class="portfolio-list list">
-          <li>
-            <img src="./images/portfolio_card_1.jpg" alt="карт_1" width="370">
-            <h1 class="portfolio-title">Технокряк</h1>
-            <p class="portfolio-sutitle">Веб-сайт</p>
-          </li>
-          <li>
-            <img src="./images/portfolio_card_2.jpg" alt="карт_1" width="370">
-            <h1 class="portfolio-title">Постер New Orlean vs Golden Star</h1>
-            <p class="portfolio-sutitle">Дизайн</p>
-          </li>
-          <li>
-            <img src="./images/portfolio_card_3.jpg" alt="карт_1" width="370">
-            <h1 class="portfolio-title">Ресторан Seafood</h1>
-            <p class="portfolio-sutitle">Додаток</p>
-          </li>
-          <li>
-            <img src="./images/portfolio_card_4.jpg" alt="карт_1" width="370">
-            <h1 class="portfolio-title">Проєкт Prime</h1>
-            <p class="portfolio-sutitle">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/portfolio_card_5.jpg" alt="карт_1" width="370">
-            <h1 class="portfolio-title">Проєкт Boxes</h1>
-            <p class="portfolio-sutitle">Додаток</p>
-          </li>
-          <li>
-            <img src="./images/portfolio_card_6.jpg" alt="карт_1" width="370">
-            <h1 class="portfolio-title">Inspiration has no Borders</h1>
-            <p class="portfolio-sutitle">Веб-сайт</p>
-          </li>
-          <li>
-            <img src="./images/portfolio_card_7.jpg" alt="карт_1" width="370">
-            <h1 class="portfolio-title">Видання Limited Edition</h1>
-            <p class="portfolio-sutitle">Дизайн</p>
-          </li>
-          <li>
-            <img src="./images/portfolio_card_8.jpg" alt="карт_1" width="370">
-            <h1 class="portfolio-title">Проєкт LAB</h1>
-            <p class="portfolio-sutitle">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/portfolio_card_9.jpg" alt="карт_1" width="370">
-            <h1 class="portfolio-title">Growing Business</h1>
-            <p class="portfolio-sutitle">Додаток</p>
-          </li>
-        </ui>
+      <section class="container portfolio">       
+          <ul class="button-list list">    
+            <li><button type="button" class="portfolio-btn">Усі</button></li>
+            <li><button type="button" class="portfolio-btn">Веб-сайти</button></li>
+            <li><button type="button" class="portfolio-btn">Додатки</button></li>
+            <li><button type="button" class="portfolio-btn">Дизайн</button></li>
+            <li><button type="button" class="portfolio-btn">Маркетинг</button></li>
+          </ul>      
+          <ul class="portfolio-list list">
+            <li>
+              <img src="./images/portfolio_card_1.jpg" alt="карт_1" width="370">
+              <h1 class="portfolio-title">Технокряк</h1>
+              <p class="portfolio-sutitle">Веб-сайт</p>
+            </li>
+            <li>
+              <img src="./images/portfolio_card_2.jpg" alt="карт_1" width="370">
+              <h1 class="portfolio-title">Постер New Orlean vs Golden Star</h1>
+              <p class="portfolio-sutitle">Дизайн</p>
+            </li>
+            <li>
+              <img src="./images/portfolio_card_3.jpg" alt="карт_1" width="370">
+              <h1 class="portfolio-title">Ресторан Seafood</h1>
+              <p class="portfolio-sutitle">Додаток</p>
+            </li>
+            <li>
+              <img src="./images/portfolio_card_4.jpg" alt="карт_1" width="370">
+              <h1 class="portfolio-title">Проєкт Prime</h1>
+              <p class="portfolio-sutitle">Маркетинг</p>
+            </li>
+            <li>
+              <img src="./images/portfolio_card_5.jpg" alt="карт_1" width="370">
+              <h1 class="portfolio-title">Проєкт Boxes</h1>
+              <p class="portfolio-sutitle">Додаток</p>
+            </li>
+            <li>
+              <img src="./images/portfolio_card_6.jpg" alt="карт_1" width="370">
+              <h1 class="portfolio-title">Inspiration has no Borders</h1>
+              <p class="portfolio-sutitle">Веб-сайт</p>
+            </li>
+            <li>
+              <img src="./images/portfolio_card_7.jpg" alt="карт_1" width="370">
+              <h1 class="portfolio-title">Видання Limited Edition</h1>
+              <p class="portfolio-sutitle">Дизайн</p>
+            </li>
+            <li>
+              <img src="./images/portfolio_card_8.jpg" alt="карт_1" width="370">
+              <h1 class="portfolio-title">Проєкт LAB</h1>
+              <p class="portfolio-sutitle">Маркетинг</p>
+            </li>
+            <li>
+              <img src="./images/portfolio_card_9.jpg" alt="карт_1" width="370">
+              <h1 class="portfolio-title">Growing Business</h1>
+              <p class="portfolio-sutitle">Додаток</p>
+            </li>
+        </ui>        
       </section>
     </main>
-    <footer class="footer">
+    <footer class="container footer">
       <a class="footer-logo link" href="./">
         <span class="logo-cyan">Web</span>Studio
       </a>

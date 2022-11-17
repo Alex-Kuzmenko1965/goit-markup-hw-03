@@ -7,59 +7,61 @@
     <title>WebSudio</title>    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <!-- Шапка сторінки -->
     <header class="header">
       <!-- Навігація на інші сторінки -->
-      <nav class="header-nav">
-        <a class="header-logo link" href="./">        
-          <span class="logo-cyan">Web</span>Studio
-        </a>      
-        <ul class="header-list list">
-          <li><a href="./" class="header-link link">Студія</a></li>
-          <li><a href="./portfolio.html" class="header-link link">Портфоліо</a></li>
-          <li><a href="" class="header-link link">Контакти</a></li>
-        </ul>        
-      </nav>
-      <div>
+        <nav class="container header-nav">
+          <a class="header-logo link" href="./">        
+            <span class="logo-cyan">Web</span>Studio
+          </a>          
+          <ul class="header-list list">
+            <li><a href="./" class="header-link link">Студія</a></li>
+            <li><a href="./portfolio.html" class="header-link link">Портфоліо</a></li>
+            <li><a href="" class="header-link link">Контакти</a></li>
+          </ul>        
+        </nav>        
         <!-- Посилання на e-mail та телефон-->
-        <ul class="auth list">
-          <li><a class="auth-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="auth-tel link"  href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </div>      
+        <div class="container">
+          <ul class="auth list">
+            <li><a class="auth-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="auth-tel link"  href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </div>      
     </header>
     <!-- Основна сторінка сайту-->
     <main>
-      <section class="hero">
+      <section class="container-hero hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>        
-        <button type="button" class="hero-btn link">Замовити послугу</button>
-      </section>
-      <section class="feature">      
+          <button type="button" class="hero-btn link">Замовити послугу</button>
+        </section>      
+      <section class="container feature"> 
         <ul class="feature-list list">
-          <li>        
-            <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="feature-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>          
-          </li>
-          <li> 
-            <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="feature-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-          </li>
-          <li>
-            <h3 class="feature-title">ПЛАНУВАННЯ</h3>
-            <p class="feature-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-          </li>
-          <li>
-            <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="feature-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-          </li>
-        </ul>
+            <li>        
+              <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="feature-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>          
+            </li>
+            <li> 
+              <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="feature-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            </li>
+            <li>
+              <h3 class="feature-title">ПЛАНУВАННЯ</h3>
+              <p class="feature-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+            </li>
+            <li>
+              <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="feature-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            </li>
+        </ul>       
       </section>
-      <section class="direct">
+      <section class="container direct">
         <h2 class="title">Чим ми займаємося</h2>
         <ul class="direct-list list">
           <li>
@@ -77,9 +79,9 @@
               <img src="./images/box-3.jpg" alt="бокс 3" width="370" height="294">
             </a>
           </li>
-        </ul>
+        </ul>        
       </section>
-      <section class="comand">
+      <section class="container comand">
         <h2 class="title">Наша команда</h2>      
         <ul  class="comand-list list">
           <li>
@@ -105,7 +107,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="container footer">
       <a class="footer-logo link" href="./">
         <span class="logo-cyan">Web</span>Studio
       </a>
