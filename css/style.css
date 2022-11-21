@@ -35,11 +35,12 @@ body {
 
 .container {
   width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 /*---HEADER---*/
 .header {  
-  border-bottom: 10px;
+  border-bottom: 1px;
   border-style: solid;
   border-color: #ECECEC;
   background-color: var(--light-color);
@@ -158,6 +159,7 @@ body {
   border-radius: 4px;
   border-color: transparent;
   background-color: var(--accent-color);
+  font-weight: 700;
   margin: 0 auto;
 
   font-family: inherit;
@@ -175,16 +177,15 @@ body {
 }
 
 .feature-list {
-  display: flex;  
+  display: flex;
+    
 }
 
 .feature-list .item+.item {
   margin-left: 30px;
-  max-width: 270px;
 }
 
-.feature,
-.direct {
+.feature {
   margin-top: 0;
   padding: 94px 15px;
 }
@@ -199,10 +200,19 @@ body {
   color: var(--primary-text-color);
 }
 .feature-text {
+  max-width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;  
   color: var(--secandary-text-color);
+}
+
+.direct {
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
 }
 
 .direct-list {
@@ -224,13 +234,16 @@ body {
   margin: 0 0;  
 }
 
+img {
+  display: block;
+}
+
 .team-list .team-item+.team-item {
   margin-left: 30px;
   max-width: 270px;
 }
 
-.team-item {
-  
+.team-item {  
   padding-bottom: 30px;
 }
 
@@ -249,14 +262,14 @@ body {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;  
   color: var(--primary-text-color);
 }
 .desc {
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;  
   color: var(--secandary-text-color);
@@ -303,15 +316,14 @@ body {
   display: inline-flex;
   flex-wrap: wrap;
   margin: 0 0;
-  gap: 30px;
+  gap: 30px;  
+}
+.portfolio-item {
+  border: 1px solid #EEEEEE;
 }
 
 .portfolio-item div {
-  padding-left: 0;
-  padding-top: 20px;
-  padding-right: 0;
-  padding-bottom: 30px;
-  border: 0;
+  padding: 20px 24px;  
 }
 
 .portfolio-title {
@@ -331,7 +343,7 @@ body {
 }
 /*---FOOtER---*/
 .footer {
-  padding: 60px 47px;  
+  padding: 60px 0;  
   background-color: var(--background-dark-color);
 }
 
