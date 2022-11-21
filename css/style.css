@@ -324,12 +324,9 @@ img {
   gap: 30px;  
 }
 
-.portfolio-item {
-  border: 1px solid #EEEEEE;
-}
-
 .portfolio-item div {
-  padding: 20px 24px;   
+  padding: 20px 24px; 
+  border: 1px solid #EEEEEE;
 }
 
 .portfolio-title {
