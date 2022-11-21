@@ -108,6 +108,8 @@ body {
   margin-left: 50px;
 }
 .auth-mail {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;  
@@ -120,6 +122,8 @@ body {
 }
 
 .auth-tel {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -141,7 +145,7 @@ body {
 
 .hero-title {
   display: block;
-  width: 696px;
+  width: 700px;
   margin: 0 auto 30px;
 
   font-weight: 900;
@@ -163,6 +167,7 @@ body {
   margin: 0 auto;
 
   font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -319,10 +324,12 @@ img {
   gap: 30px;  
 }
 
-.portfolio-item div {
-  padding: 20px 24px; 
+.portfolio-item {
   border: 1px solid #EEEEEE;
-  
+}
+
+.portfolio-item div {
+  padding: 20px 24px;   
 }
 
 .portfolio-title {
